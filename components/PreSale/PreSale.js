@@ -24,7 +24,7 @@ export default class PreSale extends Component {
 
     render() {
         const styles = require('./PreSale.scss');
-        const { content } = this.context.translate;
+
         let { tokensSold, weiRaised, hardCap, investorCount, startTime, endTime, totalTokens, contractAddress, crowdsaleFinished } = this.props.ico;
         const distribution = (totalTokens - tokensSold)
 
@@ -54,7 +54,7 @@ export default class PreSale extends Component {
                         <div className="row center-xs">
                             <div className="col-xs-12 col-sm-4" onClick={(e)=>this.props.openContract(e)}>
                                 <div className="button" style={{marginBottom: '20px'}}>
-                                    {content.getContractAddress}
+                                    {content.get_contract_address}
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export default class PreSale extends Component {
                                       value={investorCount}
                                       speed={3000} />
                                 </p>
-                                <p className={styles.smallString}>{content.investorCount}</p>
+                                <p className={styles.smallString}>{content.investor_count}</p>
                             </div>
                             <div className="col-xs-12 col-sm-4">
                                 <p className={styles.largeString}>
