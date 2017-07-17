@@ -1,0 +1,23 @@
+.bar {
+    width: 100%;
+    position: relative;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    height: 36px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.progress {
+    height: 36px;
+    position: absolute;
+    left: 0;
+    background: #FFFFFF;
+}
+
+.percents {
+    color: #413c3c;
+    font-weight: 500;
+    position: relative;
+}

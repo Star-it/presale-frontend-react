@@ -1,0 +1,62 @@
+@import "../../../styles/variables.scss";
+.countdown {
+    color: #FFFFFF;
+}
+
+.cube {
+    // margin-top: -22px;
+    line-height: 1.1;
+    color: #FFFFFF;
+}
+
+.colon {
+    color: #FFFFFF;
+    font-style: normal;
+    position: relative;
+}
+
+.cube,
+.colon {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    display: none;
+    width: 84px;
+    font-size: 15px;
+    text-align: center;
+    // color: #000;
+}
+@media #{$tablet} {
+    .cube {
+        width: 84px;
+        height: 84px;
+        // margin-top: -22px;
+        line-height: 1.1;
+        padding-top: 11px;
+        background-color: #FFFFFF;
+        color: #FEA789;
+        border-radius: 5px;
+        font-size: 45px;
+    }
+    .colon {
+        width: 20px;
+        color: #FFFFFF;
+        font-style: normal;
+        position: relative;
+        top: -.1em;
+        font-size: 45px;
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        display: block;
+    }
+}
